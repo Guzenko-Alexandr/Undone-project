@@ -7,16 +7,22 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
-    <title>Document</title>
+    <title>bouncy</title>
 </head>
 
-<body>
+<body class="body">
     <header class="header" id="header">
+        <!-- Удалить айди хедер -->
         <div class="container">
             <div class="header__wrapper">
-                <div class="logo"><a href="#">bouncy</a></div>
+                <a href="#body"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="112px" height="25px">
+                        <text font-family="BigJohn" fill="rgb(255, 255, 255)" font-size="25px" x="0px" y="19.317px"
+                            class="logo">bouncy</text>
+                    </svg>
+                </a>
 
-                <nav class="header__nav">
+                <nav class="header__nav main-navigation">
                     <ul class="header__nav__list">
                         <li class="header__nav__item"><a class="header__nav__link">hello</a></li>
                         <li class="header__nav__item"><a class="header__nav__link">about</a></li>
@@ -24,7 +30,7 @@
                         <li class="header__nav__item"><a class="header__nav__link">portfolio</a></li>
                         <li class="header__nav__item"><a class="header__nav__link">team</a></li>
                         <li class="header__nav__item"><a class="header__nav__link">blog</a></li>
-                        <li class="header__nav__item"><a class="header__nav__link">contact</a></li>
+                        <li class="header__nav__item"><a href="#footer" class="header__nav__link">contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -32,8 +38,8 @@
     </header>
 
     <main class="main">
-        <div class="main__container container">
-            <div class="main__section">
+        <section class="main__container ">
+            <div class="main__section container">
                 <h1 class="main__title">we are code cafe</h1>
                 <div class="main__subtitle">
                     At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis <br>praesentium voluptatum
@@ -43,122 +49,151 @@
                     <span class="button__arrow"><a href="#bouncy"></a></span>
                 </div>
             </div>
-        </div>
-    </main>
+        </section>
 
-    <section class="bouncy" id="bouncy">
-        <div class="bouncy__container">
-            <div class="bouncy__wrapper">
-                <div>
-                    <h2 class="bouncy__title ">
-                        this is bouncy
-                    </h2>
-                    <div class="bouncy__subtitle">
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                        voluptatum
-                        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
-                        provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
-                        dolorum
-                        fuga.
-                        Et harum quidem rerum facilis est et expedita distinctio.
+        <section class="bouncy" id="bouncy">
+            <div class="bouncy__container">
+                <div class="bouncy__wrapper">
+                    <div>
+                        <h2 class="bouncy__title ">
+                            this is bouncy
+                        </h2>
+                        <div class="bouncy__subtitle">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum
+                            deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                            non
+                            provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+                            dolorum
+                            fuga.
+                            Et harum quidem rerum facilis est et expedita distinctio.
+                        </div>
+                        <a class="bouncy__button">
+                            read more
+                        </a>
                     </div>
-                    <a class="bouncy__button">
-                        read more
-                    </a>
-                </div>
-                <img src="/img/IPAD.png" alt="IPAD" class="bouncy__img">
+                    <img src="/img/IPAD.png" alt="IPAD" class="bouncy__img">
 
-                </img>
+                    </img>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="about">
-        <div class="about__container">
-            <div class="about__wrapper">
-                <h2 class="title">details about bouncy</h2>
-                <div class="subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                    praesentium
-                </div>
-                <div class="about__tabs">
-                    <div class="about__tabs-triggers triggers-tabs">
-                        <a href="#tab-1" class="triggers-tabs__item"><i class="far fa-heart"></i></a>
-                        <a href="#tab-2" class="triggers-tabs__item"><i class="fas fa-mouse"></i></a>
-                        <a href="#tab-3" class="triggers-tabs__item"><i class="far fa-lightbulb"></i></a>
+        <section class="about">
+            <div class="about__container container-1030">
+                <div class="about__wrapper">
+                    <h2 class="title">details about bouncy</h2>
+                    <div class="subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                        praesentium
                     </div>
-                    <div class="tabs__content content-tabs">
-                        <div id="tab-1" class="content-tabs__item">
-                            <div class="content-tabs-left">
-                                <h2 class="title"> creativ ideas</h2>
-                                <div class="">
-                                    At <span class="element-aqua">vero</span> eos et accusamus et iusto odio dignissimos
-                                    <strong>ducimus</strong> qui blanditiis
-                                    praesentium voluptatum deleniti atque corrupti quos dolores
+                    <div class="about__tabs">
+                        <div class="about__tabs-triggers triggers-tabs">
+                            <a href="#tab-1" class="triggers-tabs__item"><i class="far fa-heart"></i></a>
+                            <a href="#tab-2" class="triggers-tabs__item"><i class="fas fa-mouse"></i></a>
+                            <a href="#tab-3" class="triggers-tabs__item"><i class="far fa-lightbulb"></i></a>
+                        </div>
+                        <div class="tabs__content content-tabs">
+                            <div id="tab-1" class="content-tabs__item">
+                                <div class="content-tabs-left">
+                                    <h2 class="title"> creativ ideas</h2>
+                                    <div class="">
+                                        At <span class="element-aqua">vero</span> eos et accusamus et iusto odio
+                                        dignissimos
+                                        <strong>ducimus</strong> qui blanditiis
+                                        praesentium voluptatum deleniti atque corrupti quos dolores
+                                    </div>
+                                </div>
+                                <div class="content-tabs-right">
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blan&shyditiis
+                                    praesentium
+                                    voluptatum deleniti atque <strong>corrupti quos</strong> dolores et quas molestias
+                                    <span class="element-aqua">excepturi</span> sint
+                                    occaecati cupiditate non provident, <span>simi&shylique</span> sunt in culpa qui
+                                    officia
+                                    deserunt
+                                    mollitia animi, id est laborum et dolorum fuga. Et harum quidem r
                                 </div>
                             </div>
-                            <div class="content-tabs-right">
-                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blan&shyditiis
-                                praesentium
-                                voluptatum deleniti atque <strong>corrupti quos</strong> dolores et quas molestias
-                                <span class="element-aqua">excepturi</span> sint
-                                occaecati cupiditate non provident, <span>simi&shylique</span> sunt in culpa qui officia
-                                deserunt
-                                mollitia animi, id est laborum et dolorum fuga. Et harum quidem r
+                            <div id="tab-2" class="content-tabs__item">
+                                content2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde et illum
+                                perspiciatis
+                                voluptatibus non ea, perferendis mollitia consectetur nam? Illo, ipsum. Magnam ducimus
+                                sapiente
+                                vel, voluptatum optio minus placeat error cupiditate officiis reiciendis nulla possimus
+                                soluta
+                                voluptate fugit sunt omnis!
                             </div>
-                        </div>
-                        <div id="tab-2" class="content-tabs__item">
-                            content2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde et illum
-                            perspiciatis
-                            voluptatibus non ea, perferendis mollitia consectetur nam? Illo, ipsum. Magnam ducimus
-                            sapiente
-                            vel, voluptatum optio minus placeat error cupiditate officiis reiciendis nulla possimus
-                            soluta
-                            voluptate fugit sunt omnis!
-                        </div>
-                        <div id="tab-3" class="content-tabs__item">
-                            content3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur id illum
-                            repellat
-                            odio quis natus, ex accusamus? Perspiciatis, doloremque quod?
+                            <div id="tab-3" class="content-tabs__item">
+                                content3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur id illum
+                                repellat
+                                odio quis natus, ex accusamus? Perspiciatis, doloremque quod?
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="featured">
-        <div class="featured__container container">
-            <div class="title">
-                featured projects
+        <section class="featured">
+            <div class="featured__container container">
+                <div class="title">
+                    featured projects
+                </div>
+                <div class="subtitle featured__subtitle">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui <br>blanditiis
+                    praesentium
+                </div>
             </div>
-            <div class="subtitle featured__subtitle">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui <br>blanditiis
-                praesentium
+        </section>
+
+        <div class="pictures-block">
+            <!-- <div class="pictures__container"> -->
+            <div class="picture__wrapper-flex">
+                <a href="#" class="picture__link picture__link1">
+                    <img src="img/Rectangle2.png" alt="" class="picture__img">
+                </a>
+                <a href="#" class="picture__link picture__link2"><span class="picture__link2-text"> vintage</span><img
+                        src="img/Layer17.png" alt="" class="picture__img">
+                </a>
+                <a href="#" class="picture__link picture__link2"><span class="picture__link2-text"> branding</span><img
+                        src="img/Layer14.png" alt="" class="picture__img"></a>
+            </div>
+            <!-- </div> -->
+            <div class="submit-block">
+                <div class="container-1030 submit-container">
+                    <div>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blan­ditiis
+                    </div>
+                    <button class="submit-button">
+                        submit now
+                    </button>
+                </div>
             </div>
         </div>
-    </section>
 
-    <div class="pictures-block">
-        <!-- <div class="pictures__container"> -->
-        <div class="picture__wrapper-flex">
-            <a href="#" class="picture__link picture__link1">
-                <img src="img/Rectangle2.png" alt="" class="picture__img">
-            </a>
-            <a href="#" class="picture__link picture__link2"><span class="picture__link2-text"> vintage</span><img
-                    src="img/Layer17.png" alt="" class="picture__img">
-            </a>
-            <a href="#" class="picture__link picture__link2"><span class="picture__link2-text"> branding</span><img
-                    src="img/Layer14.png" alt="" class="picture__img"></a>
-        </div>
-        <!-- </div> -->
-        <div class="submit-block">
-            <button>
+        <!-- <container class="services">
+            <div class="services__container container-1030">
 
-            </button>
-        </div>
-    </div>
-    <!-- <div></div> -->
-    <footer class="footer">
+                <h2 class="title">our services</h2>
+                <div class="subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br>blanditiis
+                    praesentium</div>
+                <div class="flex">
+                    <div class="tab">
+                        <a href="#tab-1" class="triggers-tabs__item"><i class="far fa-heart"></i></a>
+                        <a href="#tab-1" class="triggers-tabs__item"><i class="far fa-heart"></i></a>
+                        <a href="#tab-1" class="triggers-tabs__item"><i class="far fa-heart"></i></a>
+                        <a href="#tab-1" class="triggers-tabs__item"><i class="far fa-heart"></i></a>
+                    </div>
+                    <div class="krugi">
+
+                    </div>
+                </div>
+            </div>
+
+        </container> -->
+    </main>
+
+    <footer class="footer" id="footer">
 
     </footer>
 
