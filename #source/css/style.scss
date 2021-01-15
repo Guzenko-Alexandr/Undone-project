@@ -307,90 +307,51 @@ img {
     line-height: 1.5;
 }
 
-.pictures__container {
-    // height: 330px;
-}
-
 .pictures-block {
     width: 100%;
+    background-color: $lightgrey;
 }
 
 .picture__wrapper-flex {
     display: flex;
     width: 100%;
     justify-content: center;
-    height: 330px;
-    max-height: 40vh;
+    height: 270px;
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
 .picture__link {
     width: 33.333%;
-    // background: black;
-    // opacity: 0.5;
     transition: 0.5s linear;
     position: relative;
-}
-
-.picture__link1 {
-    // min-width: 50%;
-}
-
-.picture__link1:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0;
-    transition: 0.5s linear;
-}
-
-.picture__link2:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.5;
-    transition: 0.5s linear;
-}
-
-.picture__link2:hover:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0;
-    transition: 0.5s linear;
-}
-
-.picture__link1.no-active:before {
-    opacity: 0.5;
+    height: 270px;
+    overflow: hidden;
 }
 
 .picture__link1 {
     width: 66.333%;
 }
 
-.picture__link:hover {
-    width: 35%;
+.picture__img {
+    height: 270px;
+    width: 100%;
+    filter: brightness(50%);
     transition: 0.5s linear;
 }
 
-.picture__img {
-    width: 100%;
-    height: 100%;
+.picture__img:hover {
+    filter: brightness(100%);
+    transition: 0.5s linear;
+    transform: scale(1.03);
 }
 
-.picture__link1:hover {
-    width: 68%;
+.picture__img1 {
+    filter: brightness(100%);
+}
+
+.picture__img1.no-active {
+    filter: brightness(50%);
 }
 
 .picture__link2-text {
@@ -400,9 +361,10 @@ img {
     font-size: 20px;
     text-transform: uppercase;
     color: white;
+    z-index: 1;
+    pointer-events: none;
+    transition: 0.5s linear;
 }
-
-//
 
 .submit-block {
     background-image: url(../img/Layer85.png);
